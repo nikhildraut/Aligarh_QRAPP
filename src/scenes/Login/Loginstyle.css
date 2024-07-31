@@ -1,0 +1,74 @@
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/5/57/Havells_Logo.svg), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, right;
+  padding: 1em 2em;
+  height: 90%;
+  width: 90%;
+}
+
+.root {
+  background-color: white;
+  padding: 1em 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+
+p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+button[type="submit"] {
+  background-color: #1E4B73;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+@media (max-width: 767px) {
+  .root {
+      padding: 1em;
+  }
+  
+  form {
+      padding: 0.5em 0;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+      width: 100%;
+      font-size: 14px;
+  }
+  
+  p {
+      font-size: 14px;
+  }
+  
+  button[type="submit"] {
+      font-size: 14px;
+  }
+}
